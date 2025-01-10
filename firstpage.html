@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #141E30, #243B55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            animation: typing 4s steps(40, end), blink 0.6s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid #fff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+            animation: fadeUp 2s ease-in-out;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            color: #141E30;
+            background: #00C9A7;
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #00E5FF;
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn span {
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn:hover span {
+            transform: translateX(10px);
+        }
+
+        .btn .arrow {
+            margin-left: 10px;
+            border: solid #141E30;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 5px;
+            transform: rotate(-45deg);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn:hover .arrow {
+            transform: rotate(-45deg) translateX(5px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: white;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Information System</h1>
+        <p>Manage student data seamlessly and efficiently.</p>
+        <a href="login1.html" class="btn">
+            Get Started
+            <span class="arrow"></span>
+        </a>
+    </div>
+</body>
+</html>
