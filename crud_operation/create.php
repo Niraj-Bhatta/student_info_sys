@@ -10,6 +10,12 @@
         $Email = $_POST['Email'];
         $q = " INSERT INTO `crud1`(`Roll_no`,`Name`, `Age`, `Semester`, `Department`, `Enrolled_year`, `Email`) VALUES ( '$Roll_no','$name', '$Age', '$Semester', '$Department', '$Enrolled_year', '$Email' )" ;
         $query = mysqli_query($conn,$q);
+
+        if($query) {
+          header("Location: http://localhost/dbms_pjt/crud_operation/index1.php");
+          exit;
+        }
+            
     }
 ?>
 
@@ -72,7 +78,7 @@
  <label> Email: </label>
  <input type="text" name="Email" class="form-control"> <br>
 
- <button class="btn btn-success" type="submit" name="submit"> Submit </button><br>
+ <button class="btn btn-success" type="submit" name="submit" > Submit </button><br>
  <a class="btn btn-info" type="submit" name="cancel" href="index1.php"> Cancel </a><br>
 
  </div>
