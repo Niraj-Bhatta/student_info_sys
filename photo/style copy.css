@@ -25,11 +25,11 @@
   
   nav {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
   }
   
   .logo {
@@ -37,11 +37,12 @@
     font-size: 24px;
     font-weight: bold;
   }
-  
+
   .nav-links {
     list-style: none;
     display: flex;
-    margin-top:10px ;
+    margin: 7px 30px;
+    
   }
   
   .nav-links li {
@@ -54,6 +55,7 @@
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
+
   }
   
   .nav-links a:hover {
@@ -74,6 +76,7 @@
   
   .login-btn:hover {
     background-color: #c0392b;
+    
   }
 
   /* Profile Icon */
@@ -84,6 +87,7 @@
   #user-icon{
     color: #fff;
     font-size: 1.5rem;
+   
   }
   .profile-icon img {
     width: 40px;
